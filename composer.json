@@ -1,0 +1,39 @@
+{
+    "name": "urbanodev/documento-verificavel",
+    "description": "Documento emitido com código e QR de conferência: conteúdo congelado, hash e selo para o PDF. Implementa kit-desenvolvimento/modulos/documento-verificavel.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "bacon/bacon-qr-code": "^2.0.8 || ^3.0",
+        "illuminate/database": "^13.0",
+        "illuminate/support": "^13.0",
+        "illuminate/view": "^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UrbanoDev\\DocumentoVerificavel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UrbanoDev\\DocumentoVerificavel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UrbanoDev\\DocumentoVerificavel\\DocumentoVerificavelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
